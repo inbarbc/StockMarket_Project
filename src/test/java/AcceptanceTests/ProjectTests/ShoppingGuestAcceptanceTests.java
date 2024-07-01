@@ -2,7 +2,6 @@ package AcceptanceTests.ProjectTests;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -116,10 +115,6 @@ public class ShoppingGuestAcceptanceTests {
         assertFalse(_bridge.testCheckAllOrNothingBuyingShoppingCartGuest("fail", new ArrayList<Integer>(), "123456789", "address")); // fail - one of the pruducts (or more) is not available
         assertTrue(_bridge.testCheckAllOrNothingBuyingShoppingCartGuestThreading("success", new ArrayList<Integer>(), "123456789", "address")); // success - all products are available to buy only for 1 guest.
         assertFalse(_bridge.testCheckAllOrNothingBuyingShoppingCartGuestThreading("fail", new ArrayList<Integer>(), "123456789", "address")); // fail - some products are not available to buy for any guest.
-        // assertTrue(_bridge.testBuyingShoppingCartPoliciesGuest() ); // success - all
-        // shop policies are valid
-        // assertFalse(_bridge.testBuyingShoppingCartPoliciesGuest() ); // fail - one of
-        // the shop policies (or more) is not available
     }
 
     // Test the buying senerio of a shopping cart (all or nothing) as a user.

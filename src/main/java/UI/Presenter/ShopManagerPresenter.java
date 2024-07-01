@@ -25,7 +25,6 @@ import UI.Model.ProductDto;
 import UI.Model.Response;
 import UI.Model.ShopDiscountDto;
 import UI.Model.ShopManagerDto;
-import UI.Model.UserDto;
 import UI.View.ShopManagerView;
 import UI.Model.Category;
 

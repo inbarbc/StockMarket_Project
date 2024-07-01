@@ -10,12 +10,12 @@ import Dtos.Rules.MinAgeRuleDto;
 import Dtos.Rules.MinBasketPriceRuleDto;
 import Dtos.Rules.MinProductAmountRuleDto;
 import Dtos.Rules.OrRuleDto;
-import Dtos.Rules.RuleDto;
 import Dtos.Rules.ShoppingBasketRuleDto;
 import Dtos.Rules.TimeRangeInDayRuleDto;
 import Dtos.Rules.TimeRangeInMonthRuleDto;
 import Dtos.Rules.UserRuleDto;
 
+@SuppressWarnings("unchecked")
 public class RuleFactory {
     /*********  Shopping Basket Rules **********/
     public static Rule<ShoppingBasket> createShoppingBasketRule(ShoppingBasketRuleDto dto) {

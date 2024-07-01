@@ -45,11 +45,6 @@ public class ProxyBridge implements BridgeInterface{
     }
 
     @Override
-    public boolean TestUserEnterTheSystem(String SystemStatus) {
-        throw new UnsupportedOperationException("Unimplemented method 'TestUserEnterTheSystem' in ProxyBridge class");
-    }
-
-    @Override
     public boolean testLoginToTheSystem(String username, String password) {
         throw new UnsupportedOperationException("Unimplemented method 'testLoginToTheSystem' in ProxyBridge class");
     }
@@ -125,11 +120,6 @@ public class ProxyBridge implements BridgeInterface{
     }
 
     @Override
-    public boolean testBuyingShoppingCartPoliciesGuest() {
-        throw new UnsupportedOperationException("Unimplemented method 'testBuyingShoppingCartPoliciesGuest' in ProxyBridge class");
-    }
-
-    @Override
     public boolean testSearchAndDisplayShopByIDAsUser(String shopId, boolean shopContainsProducts) {
         throw new UnsupportedOperationException("Unimplemented method 'testSearchAndDisplayShopByIDAsUser' in ProxyBridge class");
     }
@@ -188,11 +178,6 @@ public class ProxyBridge implements BridgeInterface{
     @Override
     public boolean testCheckBuyingShoppingCartUser(String username, String busketsToBuy, String cardNumber, String address) {
         throw new UnsupportedOperationException("Unimplemented method 'testCheckAllOrNothingBuyingShoppingCartUser' in ProxyBridge class");
-    }
-
-    @Override
-    public boolean testBuyingShoppingCartPoliciesUser(String username, String password) {
-        throw new UnsupportedOperationException("Unimplemented method 'testBuyingShoppingCartPoliciesUser' in ProxyBridge class");
     }
 
     @Override

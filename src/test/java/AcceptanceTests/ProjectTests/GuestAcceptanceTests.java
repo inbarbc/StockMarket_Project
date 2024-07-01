@@ -37,14 +37,6 @@ public class GuestAcceptanceTests {
         assertFalse(_bridge.TestGuestRegisterToTheSystem("Mom","momspassword", "")); // fail - empty email
     }
     
-    // @Disabled("This test is disabled cuase needs to implement in real bridge")
-    // // Test if the guest can enter the system.
-    // @Test
-    // public void TestUserEnterTheSystem() {
-    //     assertTrue(_bridge.TestUserEnterTheSystem("open") ); // success
-    //     assertFalse(_bridge.TestUserEnterTheSystem("close") ); // fail - already exists
-    // }
-    
     // Test if the user can login to the system.
     @Test
     public void TestUserLogin() {

@@ -157,11 +157,10 @@ public class ShoppingBasket implements Cloneable {
         System.out.println("Finished method purchaseBasket - Returning true.");
         return true;
     }
+
     private void notfyPurchaseFromShop(String buyingUser, List<Integer> productIdList, Shop shop) {
         shop.notfyPurchaseFromShop(buyingUser,productIdList);
     }
- 
-    
 
     // Cancel the purchase of all products in the basket
     public void cancelPurchase() throws StockMarketException {

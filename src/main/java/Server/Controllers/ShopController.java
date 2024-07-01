@@ -21,7 +21,6 @@ import Dtos.ConditionalDiscountDto;
 import Dtos.ProductDto;
 import Dtos.ProductSearchDto;
 import Dtos.ShopDto;
-import Dtos.UserDto;
 import ServiceLayer.Response;
 import ServiceLayer.ShopService;
 

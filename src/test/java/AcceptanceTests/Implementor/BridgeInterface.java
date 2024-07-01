@@ -43,9 +43,6 @@ public interface BridgeInterface {
     boolean TestGuestRegisterToTheSystem(String username, String password, String email);
     
     @Test
-    boolean TestUserEnterTheSystem(String SystemStatus);
-    
-    @Test
     boolean testLoginToTheSystem(String username, String password);
 
     // SHOPPING GUEST TESTS --------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -92,9 +89,6 @@ public interface BridgeInterface {
     @Test
     boolean testCheckAllOrNothingBuyingShoppingCartGuestThreading(String test, List<Integer> basketsToBuy, String cardNumber, String address);
     
-    @Test
-    boolean testBuyingShoppingCartPoliciesGuest();
-
     // SHOPPING USER TESTS --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     @Test
@@ -132,9 +126,6 @@ public interface BridgeInterface {
     
     @Test
     boolean testCheckBuyingShoppingCartUser(String username, String busketsToBuy, String cardNumber, String address);
-    
-    @Test
-    boolean testBuyingShoppingCartPoliciesUser(String username, String password);
 
     @Test
     boolean testLogoutToTheSystem(String username);

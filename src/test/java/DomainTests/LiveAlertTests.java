@@ -13,7 +13,6 @@ import java.net.SocketTimeoutException;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class LiveAlertTests {
@@ -65,7 +64,6 @@ public class LiveAlertTests {
         serverSocket.close();
     }
 
-    @Disabled
     @Test
     public void testCloseStoreAlert() throws Exception {
         // Simulate sending a close shop request and receiving the alert
@@ -84,7 +82,6 @@ public class LiveAlertTests {
         }
     }
 
-    @Disabled
     @Test
     public void testCloseStoreAlertWrongMessage() {
         assertTimeout(Duration.ofMillis(5000), () -> {
@@ -106,7 +103,6 @@ public class LiveAlertTests {
 
     }
 
-    @Disabled
     @Test
     public void testReceiveAlertFromServer() throws Exception {
         // Simulate sending a request to the server and receiving a response
@@ -126,7 +122,6 @@ public class LiveAlertTests {
 
     }
 
-    @Disabled
     @Test
     public void testSubscriptionRemovalAlert() throws Exception {
         try (Socket testClient = new Socket("localhost", testPort);
@@ -145,7 +140,6 @@ public class LiveAlertTests {
 
     }
 
-    @Disabled
     @Test
     public void testCustomerBuysFromStoreAlert() throws Exception {
         try (Socket testClient = new Socket("localhost", testPort);
@@ -163,6 +157,7 @@ public class LiveAlertTests {
                     "Unexpected response received from server");
         }
     }
+
     // Q: what more to tes?
     // A: We can test more scenarios such as sending a message that triggers an
     // alert for a customer buying from the store

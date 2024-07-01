@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.jupiter.api.Disabled;
 
 import AcceptanceTests.Implementor.BridgeInterface;
 import AcceptanceTests.Implementor.RealBridge;
@@ -48,8 +47,6 @@ public class ShopOwnerAcceptanceTests {
     }
     
     // Test that shop owner can edit the shop policies.
-    // TODO: implement in ShopService
-    @Disabled("This test is disabled cuase needs to implement in real bridge")
     @Test
     public void testShopOwnerChangeShopPolicies() {
         assertTrue(_bridge.testShopOwnerChangeShopPolicies("shopOwner", "0", "new shop policy") ); // success
@@ -103,13 +100,11 @@ public class ShopOwnerAcceptanceTests {
     }
     
     // Test that the shop owner can get the permissions of the shop managers.
-    // TODO: implement in ShopService
-    @Disabled("This test is disabled cuase needs to implement in real bridge")
     @Test
     public void testShopOwnerGetShopManagersPermissions(){
-        assertTrue(_bridge.testShopOwnerGetShopManagersPermissions("userName", "shopId1")); // success
-        assertFalse(_bridge.testShopOwnerGetShopManagersPermissions("userName", "shopId2")); // fail - exist shop but he is not the owner
-        assertFalse(_bridge.testShopOwnerGetShopManagersPermissions("userName", "shopId3")); // fail - non exist shop id
+        assertTrue(_bridge.testShopOwnerGetShopManagersPermissions("userNameManager", "0")); // success
+        assertFalse(_bridge.testShopOwnerGetShopManagersPermissions("userNameNotOwner", "0")); // fail - exist shop but he is not a manager
+        assertFalse(_bridge.testShopOwnerGetShopManagersPermissions("userNameManager", "1")); // fail - non exist shop id
     }
     
     // Test that the shop owner can see the history purchases of the shop.
